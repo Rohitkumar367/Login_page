@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot password</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: linear-gradient(#141e30,#243b55);
+        }
+        .forgot-box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            padding: 40px;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            color: white;
+            font-size: 22px;
+            margin: 0 0 20px;
+        }
+        .for {
+            text-align: center;
+            letter-spacing: 2px;
+            color: rgb(126, 129, 133);
+        }
+        .box {
+            position: relative;
+        }
+        .box input {
+            width: 100%;
+            padding: 10px 2px;
+            font-size: 16px;
+            color: white;
+            margin-bottom: 30px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid white;
+            background: transparent;
+        }
+        label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+            pointer-events: none;
+            transition: .5s;
+        }
+        input:focus ~ label, input:valid ~ label {
+            top: -16px;
+            left: 0;
+            color: #03e9f4;
+            font-size: 11px;
+        }
+        .submit input {
+            position: relative;
+            left: 122px;
+            display: inline-block;
+            padding: 5px 10px;
+            color: #03e9f4;
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: .3s;
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+        }
+        .submit input:hover{
+            cursor: pointer;
+            background: #83f9ff;
+            color: #000;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #03e9f4;
+        }
+        .back{
+            width: 100%;
+            text-align: center;
+            color: white;
+            margin: 0;
+        }
+        a {
+            color: #03e9f4;
+        }
+        a:hover {
+            text-decoration: none;
+            text-shadow: 0 0 2px #03e9f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="forgot-box">
+        <h2>Forgot Password</h2>
+        <p class="for">For the recovery of account</p>
+        <form>
+            <div class="box">
+                <input type="text" name="" required>
+                <label>Enter your email or phone number</label>
+            </div>
+            <div class="submit">
+                <input type="submit" value="send">
+            </div>
+            <p class="back">Back to <a href="login.html">Signin</a></p>
+        </form>
+    </div>
+</body>
+</html>
